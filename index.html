@@ -7,34 +7,27 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="fifthRow">
-            <button>CLR</button>
-            <button>/</button>
-            <button>BACK</button>
-        </div>
-        <div class="fourthRow">
+    <div class="calculator">
+        <div class="cal_display">0</div>
+        <div class="cal_keys">
+            <button class="operator_key" data-action="add">+</button>
+            <button class="operator_key" data-action="subtract">-</button>
+            <button class="operator_key" data-action="multiply">&times;</button>
+            <button class="operator_key" data-action="divide">&divide;</button>
             <button>7</button>
             <button>8</button>
             <button>9</button>
-            <button>*</button>
-        </div>
-        <div class="thirdRow">
             <button>4</button>
             <button>5</button>
             <button>6</button>
-            <button>-</button>
-        </div>
-        <div class="secondRow">
             <button>1</button>
             <button>2</button>
             <button>3</button>
-            <button>+</button>
-        </div>
-        <div class="firstRow">
             <button>0</button>
-            <button>.</button>
-            <button>=</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">CLR</button>
+            <button class="equal_key" data-action="calculate">=</button>
+
         </div>
     </div>
     <script src="script.js"></script>
