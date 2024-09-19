@@ -1,15 +1,38 @@
+let firstNumber = '';
+let secondNumber = '';
+let operator = '';
+let result = '';
+
+function operate(operator , a , b) {
+    switch (operator){
+        case '+':
+            return add(a , b);
+        case '-':
+            return subtract(a , b);
+        case '*':
+            return multiply(a , b);
+        case '/':
+            return divide(a , b);
+        default:
+            return null;
+    }
+}
+
 function add(a , b){
-    return parseInt(a + b);
+    return (a + b);
 }
 
 function subtract(a , b){
-    return parseInt(a - b);
+    return (a - b);
 }
 
 function multiply(a , b){
-    return parseInt(a * b);
+    return (a * b);
 }
 
 function divide(a , b){
-    return parseInt(a / b);
+    if (b === 0){
+        return "Error"
+    }
+    return (a / b);
 }
