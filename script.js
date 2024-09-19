@@ -3,6 +3,14 @@ let secondNumber = '';
 let operator = '';
 let result = '';
 
+const display = document.getElementById('cal_display');
+const numberButtons = document.querySelectorAll('.number');
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        display.textContent += button.textContent;
+    })
+});
+
 function operate(operator , a , b) {
     switch (operator){
         case '+':

@@ -12,7 +12,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.equal_key {
+#equal_key {
     background-color: #ff7033;
     grid-column: -2;
     grid-row: 2 / span 4;
