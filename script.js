@@ -26,6 +26,19 @@ function operate(operator , a , b) {
     }
 }
 
+document.getElementById('equal_key').addEventListener('click', () =>{
+    secondNumber = display.textContent;
+    result = operate(operator, parseFloat(firstNumber, parseFloat(secondNumber)));
+    display.textContent = result;
+});
+
+document.getElementById('clear_key').addEventListener('click', () => {
+    display.textContent = '0';
+    firstNumber = '';
+    secondNumber = '';
+    operator = '';
+  });
+
 function add(a , b){
     return (a + b);
 }
