@@ -22,3 +22,7 @@ body {
 .operator_key {
     background-color: #eee;
 }
+
+#cal_display {
+    border: thin solid;
+}
